@@ -173,13 +173,13 @@
             });
         });
 
-        function getColorRiwayat(kelurahan) {
-            //ini unuk colornya
-            return 'tinggi' == getHistoryColor(kelurahan) ? '#d64337' :
-                'sedang' == getHistoryColor(kelurahan) ? '#ffd868' :
-                'rendah' == getHistoryColor(kelurahan) ? '#baf1a1' :
-                '#baf1a1';
-        }
+        function getColorRiwayat(prone_category) {
+    //ini untuk colornya
+    return 'tinggi' == prone_category ? '#d64337' :
+        'sedang' == prone_category ? '#ffd868' :
+        'rendah' == prone_category ? '#baf1a1' :
+        '#baf1a1';
+}
 
         function getHistoryColor(handledata) {
             //jadi data api dipanggil disini
