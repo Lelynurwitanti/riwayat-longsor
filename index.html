@@ -173,11 +173,11 @@
             });
         });
 
-        function getColorRiwayat(riwayatlongsor_category) {
+        function getColorRiwayat(prone_category) {
     //ini untuk colornya
-    return 'tinggi' == riwayatlongsor_category ? '#d64337' :
-        'sedang' == riwayatlongsor_category ? '#ffd868' :
-        'rendah' == riwayatlongsor_category ? '#baf1a1' :
+    return 'tinggi' == prone_category ? '#d64337' :
+        'sedang' == prone_category ? '#ffd868' :
+        'rendah' == prone_category ? '#baf1a1' :
         '#baf1a1';
 }
 
@@ -185,7 +185,7 @@
             //jadi data api dipanggil disini
             $.ajax({
                 type: 'GET',
-                url: 'http://thawing-hollows-99230.herokuapp.com/map/petalongsor',
+                url: 'http://thawing-hollows-99230.herokuapp.com/map/petalongsor/semua',
                 dataType: 'json',
                 success: function (data) {
                     handledata(data);
