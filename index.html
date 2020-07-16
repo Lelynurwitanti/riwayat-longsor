@@ -433,7 +433,7 @@
             //jadi data api dipanggil disini
             $.ajax({
                 type: 'GET',
-                url: 'http://thawing-hollows-99230.herokuapp.com/map/petalongsor/' + tahun,
+                url: 'http://thawing-hollows-99230.herokuapp.com/map/petalongsor/'+tahun,
                 dataType: 'json',
                 success: function (data) {
                     handledata(data);
@@ -464,7 +464,7 @@
             //jadi data api dipanggil disini
             $.ajax({
                 type: 'GET',
-                url: '/map/petalongsor/',
+                url: 'http://thawing-hollows-99230.herokuapp.com/map/petalongsor/'+tahun,
                 dataType: 'json',
                 success: function (data) {
                     //disimpan dilocal storage datanya agar bisa dipanggil
